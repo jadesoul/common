@@ -135,7 +135,7 @@ class Logger(object):
 		sh.setFormatter(formatter)
 		self.logger.addHandler(sh)
 		
-logger=Logger('root', 1)
+logger=Logger('Jadesoul', 1)
 debug=logger.logger.debug
 info=logger.logger.info
 warn=logger.logger.warn
@@ -143,8 +143,13 @@ error=logger.logger.error
 critical=logger.logger.critical
 
 if __name__=='__main__':
-	print u8('你好'), gb('你好')
-
+	print u8('你好'), gb('你好	')
+	print listall()
+	print listdirs()
+	print listfiles()
+	clog('hi')
+	debug('debug')
+	warn('debug')
 	
 	
 	
